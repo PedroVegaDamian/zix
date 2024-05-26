@@ -13,7 +13,7 @@ Zix es una herramienta de acortamiento de URLs diseñada para simplificar la ges
 
 ### Live Preview 👁‍🗨
 
-[zix.vercel.app/](zix.vercel.app/)
+[zix.vercel.app](zix.vercel.app)
 
 ![Zix Page](https://raw.githubusercontent.com/PedroVegaDamian/zix/main/public/zix.vercel.app_.png)
 
