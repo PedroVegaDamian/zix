@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zix - Genera tus short links</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+      document.getElementById("currentYear").innerText =
+        new Date().getFullYear();
+      document.getElementById("params").innerHTML += JSON.stringify(
+        { url: "https://www.google.com" },
+        null,
+        2
+      );
+      document.getElementById("result").innerHTML += JSON.stringify(
+        { url_result: "https://zix.vercel.app/NTys" },
+        null,
+        2
+      );
+    </script>
+  </head>
+  <body class="bg-slate-100 text-gray-900">
+    <header class="my-5 text-center">
+      <h1 class="text-8xl font-bold">ZIX</h1>
+      <h2 class="text-lg font-medium">Documentación API</h2>
+    </header>
+    <main class="max-w-[80ch] mx-auto px-4">
+      <section class="mb-5">
+        <p class="mb-2">
+          zix.vercel.app expone sus datos a través de una interfaz de
+          programación de aplicaciones (API), para que los desarrolladores
+          puedan interactuar de forma programática con la aplicación.
+        </p>
+        <p>Este documento es la referencia oficial para esa funcionalidad.</p>
+      </section>
+      <section class="mb-5">
+        <h3 class="text-lg font-semibold mb-2">Generar Nuevo Link:</h3>
+        <p>
+          <span class="font-semibold">URL Base:</span> https://zix.vercel.app
+        </p>
+        <p><span class="font-semibold">Path:</span> /api/shorten</p>
+        <p class="mb-4"><span class="font-semibold">Método:</span> POST</p>
+        <p class="font-semibold">Parámetros:</p>
+        <pre
+          id="params"
+          class="bg-slate-800 rounded p-4 text-slate-300 mb-4"
+        ><code></code></pre>
+        <p class="font-semibold">Resultado:</p>
+        <pre
+          id="result"
+          class="bg-slate-800 rounded p-4 text-slate-300"
+        ><code></code></pre>
+      </section>
+    </main>
+    <footer class="text-center pt-2 pb-6">
+      Copyright © <span id="currentYear"></span>.
+    </footer>
+  </body>
+</html>
